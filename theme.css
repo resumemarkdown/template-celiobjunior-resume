@@ -1,0 +1,98 @@
+@import url("https://cdn.jsdelivr.net/gh/sugina-dev/latin-modern-web@1.0.1/style/latinmodern-roman.css");
+@import url("https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/serif.css");
+
+@page {
+    size: letter;
+    margin: 0.8cm 1cm;
+}
+
+/* meta */
+body {
+    font-family:
+        "Latin Modern Roman", "Computer Modern Serif", "CMU Serif",
+        "Times New Roman", serif;
+    font-size: 10pt;
+    line-height: 1.6;
+    font-weight: 500;
+    color: black;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18pt;
+}
+
+h2 {
+    padding: 0;
+    font-size: 14pt;
+    font-weight: 600;
+    border-bottom: 1px solid #000000;
+}
+
+h3,
+h4 {
+    margin: 0;
+}
+
+h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12pt;
+}
+
+h4 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10pt;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 1pt;
+    margin-bottom: 2pt;
+}
+
+h4 a {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    margin-top: 5px;
+}
+ul > li {
+    margin-bottom: 1pt;
+}
+
+blockquote {
+    margin: 0 0 0 0.15in;
+}
+
+hr {
+    /* used as spacer */
+    visibility: hidden;
+}
+
+.contact > ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: -2pt auto 0pt;
+    padding: 0;
+}
+.contact > ul > li {
+    display: inline;
+    white-space: pre;
+    list-style-type: none;
+}
+.contact > ul > li:not(:last-child) {
+    margin-right: 8px;
+}
+.contact > ul > li:not(:last-child):after {
+    content: "●";
+    margin-left: 8px;
+}
